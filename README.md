@@ -1,8 +1,9 @@
-# travel_app
+# travel_app (under construction!)
 
-Travel App
+Travel App 
 
-## Getting Started
+
+# Getting Started
 
 This project is a starting point for a Flutter application.
 
