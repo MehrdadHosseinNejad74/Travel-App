@@ -50,8 +50,12 @@ class _HomeScreenState extends State<HomeScreen> {
             detailModel: upcomingTours,
           ),
           Details(
-            header: 'Special Offers',
-            detailModel: specialOffers,
+            header: 'Enjoy the nature',
+            detailModel: nature,
+          ) ,
+          Details(
+            header: 'Landmarks to visit',
+            detailModel: landmarks,
           )
         ]),
       ),
