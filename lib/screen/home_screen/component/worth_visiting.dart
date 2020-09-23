@@ -28,8 +28,8 @@ class WorthVisiting extends StatelessWidget {
               physics: BouncingScrollPhysics(),
               itemBuilder: (context, index) {
                 return Container(
-                  margin: EdgeInsets.fromLTRB(
-                      0, kDefaultPadding / 1.5, kDefaultPadding, kDefaultPadding),
+                  margin: EdgeInsets.fromLTRB(0, kDefaultPadding / 1.5,
+                      kDefaultPadding, kDefaultPadding),
                   width: size.width * 0.5,
                   decoration: BoxDecoration(
                       color: visitCovers[index].backgroundColor,

@@ -1,14 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
-import 'package:travel_app/model/detail_model.dart';
 import 'package:travel_app/model/person_model.dart';
-import 'package:travel_app/screen/explore/component/tabs.dart';
-import 'package:travel_app/screen/explore/component/travel_input.dart';
 
-import 'component/detail.dart';
+import 'component/explore.dart';
+import 'component/nearby.dart';
 import 'component/profile_info.dart';
-import 'component/worth_visiting.dart';
+import 'component/tabs.dart';
+import 'component/travel_input.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -16,47 +15,35 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int selectedTab = 0;
+
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return SafeArea(
         child: Scaffold(
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         padding: EdgeInsets.all(kDefaultPadding),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          ProfileInfo(
+          Profile(
             person: person,
           ),
           SizedBox(
             height: kDefaultPadding,
           ),
-          TravelInput(),
+          SearchBar(),
           SizedBox(
             height: kDefaultPadding,
           ),
-          Tabs(),
-          SizedBox(
-            height: kDefaultPadding,
+          Tabs(
+            selectedTab: selectedTab,
+            onClick: (tabIndex) {
+              setState(() {
+                selectedTab = tabIndex;
+              });
+            },
           ),
-          WorthVisiting(),
-          //TODO BETTER NAME
-          Details(
-            header: 'Special offers',
-            detailModel: specialOffers,
-          ),
-          Details(
-            header: 'Upcoming tours',
-            detailModel: upcomingTours,
-          ),
-          Details(
-            header: 'Enjoy the nature',
-            detailModel: nature,
-          ) ,
-          Details(
-            header: 'Landmarks to visit',
-            detailModel: landmarks,
-          )
+          selectedTab == 0 ? Explore() : Nearby()
         ]),
       ),
     ));

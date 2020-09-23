@@ -25,10 +25,16 @@ class SaveLabel extends StatelessWidget {
           color: Color(0xffEFA500),
           width: size.width * 0.3,
           height: 15,
-          child: Text(
-            'Save' + detailModel.save.toStringAsFixed(0) + '%',
-            style: kDefaultTextStyle.copyWith(
-                fontWeight: FontWeight.bold, fontSize: size.width * 0.026),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Save' + detailModel.save.toStringAsFixed(0) + '%',
+                style: kDefaultTextStyle.copyWith(
+                    fontWeight: FontWeight.bold, fontSize: size.width * 0.026),
+              ),
+            ],
           ),
         ),
       ),

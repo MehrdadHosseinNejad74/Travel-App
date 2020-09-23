@@ -34,5 +34,7 @@ flutter:
     - assets/images/upcoming/
     - assets/images/nature/
     - assets/images/landmark/
+    - assets/images/nearby/
+    - assets/images/detailcover/
 
 

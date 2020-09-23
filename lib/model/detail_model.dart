@@ -4,16 +4,26 @@ class DetailModel {
   final double price;
   final String country;
   final double save;
+  final double destination;
+  final String detailImageUrl;
 
   const DetailModel(
-      {this.save, this.imageUrl, this.description, this.price, this.country});
+      {this.detailImageUrl,
+      this.destination,
+      this.save,
+      this.imageUrl,
+      this.description,
+      this.price,
+      this.country});
 }
 
+//Explore Models
 const List<DetailModel> specialOffers = [
   DetailModel(
       imageUrl: 'assets/images/offers/losangeles.png',
       description: 'Los Angeles Sunset',
       save: 20,
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       price: 2100),
   DetailModel(
       imageUrl: 'assets/images/offers/bigsur.png',
@@ -53,4 +63,45 @@ const List<DetailModel> landmarks = [
       imageUrl: 'assets/images/landmark/liberty.png',
       description: 'The Statue of Liberty',
       country: 'United States')
+];
+
+//Nearby Models
+const List<DetailModel> tours = [
+  DetailModel(
+      imageUrl: 'assets/images/nearby/tours.png',
+      description: 'Get to Know BC',
+      price: 2700),
+];
+
+const List<DetailModel> nearbyNature = [
+  DetailModel(
+      imageUrl: 'assets/images/nearby/backcountry.png',
+      description: 'Backcountry',
+      destination: 37),
+  DetailModel(
+      imageUrl: 'assets/images/nearby/fjord.png',
+      description: 'Fjord',
+      destination: 92)
+];
+
+const List<DetailModel> nearbyLandmarks = [
+  DetailModel(
+      imageUrl: 'assets/images/nearby/christ.png',
+      description: 'Christ Church Cathedral',
+      destination: 5),
+  DetailModel(
+      imageUrl: 'assets/images/nearby/thunderbird.png',
+      description: 'Thunderbird Park',
+      destination: 13)
+];
+
+const List<DetailModel> localFood = [
+  DetailModel(
+      imageUrl: 'assets/images/nearby/bar.png',
+      description: 'Hy’s Steakhouse & Cocktail Bar',
+      destination: 4),
+  DetailModel(
+      imageUrl: 'assets/images/nearby/chambar.png',
+      description: 'Chambar',
+      destination: 3)
 ];

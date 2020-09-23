@@ -20,20 +20,23 @@ class Description extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            detailModel.description,
-            style: kDefaultTextStyle.copyWith(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: size.width * 0.035),
+          Container(
+            width: size.width * 0.5,
+            child: Text(
+              detailModel.description,
+              maxLines: 2,
+              overflow: TextOverflow.fade,
+              style: kDefaultTextStyle.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: size.width * 0.035),
+            ),
           ),
           SizedBox(
             height: kDefaultPadding / 10,
           ),
           Text(
-            detailModel.price != null
-                ? 'From \$' + detailModel.price.toStringAsFixed(0)
-                : detailModel.country,
+            _getDescription(detailModel),
             style: kDefaultTextStyle.copyWith(
                 color: Colors.white.withOpacity(0.75),
                 fontWeight: FontWeight.w100,
@@ -42,5 +45,21 @@ class Description extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  String _getDescription(DetailModel detailModel) {
+    //Save
+    if (detailModel.save != null)
+      return 'From \$' + detailModel.price.toStringAsFixed(0);
+
+    //Country
+    if (detailModel.country != null) return detailModel.country;
+
+    //Destination
+    if (detailModel.destination != null)
+      return detailModel.destination.toStringAsFixed(0) + ' km';
+
+    //Default
+    return '';
   }
 }

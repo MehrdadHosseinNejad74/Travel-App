@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
 import 'package:travel_app/model/person_model.dart';
 
-class ProfileInfo extends StatelessWidget {
+class Profile extends StatelessWidget {
   final Person person;
 
-  const ProfileInfo({Key key, @required this.person}) : super(key: key);
+  const Profile({Key key, @required this.person}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

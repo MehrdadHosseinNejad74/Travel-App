@@ -2,7 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
 
-class TravelInput extends StatelessWidget {
+class SearchBar extends StatelessWidget {
+
+  const SearchBar();
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -36,4 +39,6 @@ class TravelInput extends StatelessWidget {
       ),
     );
   }
+
+
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/screen/explore/home_screen.dart';
+import 'package:travel_app/screen/home_screen/home_screen.dart';
 
 /// @author : Mehrdad HosseinNejad
 /// Email : hosseinnejad74@gmail.com
