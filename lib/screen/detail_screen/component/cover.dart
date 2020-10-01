@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 
 class Cover extends StatelessWidget {
   const Cover({
@@ -7,12 +7,11 @@ class Cover extends StatelessWidget {
     this.travelModel,
   }) : super(key: key);
 
-  final DetailModel travelModel;
+  final TravelModel travelModel;
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-
     return Container(
       height: size.height * 0.35,
       width: size.width,

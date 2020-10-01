@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 
 import 'travel_list.dart';
 

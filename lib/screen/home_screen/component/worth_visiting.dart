@@ -70,7 +70,7 @@ class WorthVisiting extends StatelessWidget {
                               visitCovers[index].country,
                               style: kDefaultTextStyle.copyWith(
                                   color: Colors.white.withOpacity(0.75),
-                                  fontWeight: FontWeight.w100,
+                                  fontWeight: FontWeight.w400,
                                   fontSize: size.width * 0.035),
                             )
                           ],

@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:travel_app/constant/constant.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 
 class SaveLabel extends StatelessWidget {
   const SaveLabel({
@@ -10,7 +10,7 @@ class SaveLabel extends StatelessWidget {
     @required this.detailModel,
   }) : super(key: key);
 
-  final DetailModel detailModel;
+  final TravelModel detailModel;
 
   @override
   Widget build(BuildContext context) {

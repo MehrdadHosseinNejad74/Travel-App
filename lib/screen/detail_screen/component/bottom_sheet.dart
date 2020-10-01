@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 
 class CustomBottomSheet extends StatelessWidget {
   const CustomBottomSheet({
@@ -9,7 +9,7 @@ class CustomBottomSheet extends StatelessWidget {
     this.travelModel,
   }) : super(key: key);
 
-  final DetailModel travelModel;
+  final TravelModel travelModel;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class CustomBottomSheet extends StatelessWidget {
           Text('\$' + travelModel.price.toString(),
               style: kDefaultTextStyle.copyWith(
                   color: kDefaultSecondaryColor,
-                  fontWeight: FontWeight.w100,
+                  fontWeight: FontWeight.w500,
                   fontSize: size.width * 0.035)),
           SizedBox(
             width: kDefaultPadding,

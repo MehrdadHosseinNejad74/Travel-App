@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 
 class Description extends StatelessWidget {
   const Description({
@@ -9,7 +9,7 @@ class Description extends StatelessWidget {
     @required this.detailModel,
   }) : super(key: key);
 
-  final DetailModel detailModel;
+  final TravelModel detailModel;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class Description extends StatelessWidget {
             _getDescription(detailModel),
             style: kDefaultTextStyle.copyWith(
                 color: Colors.white.withOpacity(0.75),
-                fontWeight: FontWeight.w100,
+                fontWeight: FontWeight.w400,
                 fontSize: size.width * 0.035),
           )
         ],
@@ -47,7 +47,7 @@ class Description extends StatelessWidget {
     );
   }
 
-  String _getDescription(DetailModel detailModel) {
+  String _getDescription(TravelModel detailModel) {
     //Save
     if (detailModel.save != null)
       return 'From \$' + detailModel.price.toStringAsFixed(0);

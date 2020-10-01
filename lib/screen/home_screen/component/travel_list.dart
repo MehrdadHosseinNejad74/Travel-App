@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 import 'package:travel_app/screen/home_screen/component/travel_list_cover.dart';
 import 'package:travel_app/screen/home_screen/component/travel_list_header.dart';
 
 class TravelList extends StatelessWidget {
   final String header;
-  final List<DetailModel> detailModel;
+  final List<TravelModel> detailModel;
 
   const TravelList({
     Key key,

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
-import 'package:travel_app/model/detail_model.dart';
+import 'package:travel_app/model/travel_model.dart';
 import 'package:travel_app/routing/fade_route.dart';
 import 'package:travel_app/screen/detail_screen/detail_screen.dart';
 import 'package:travel_app/screen/home_screen/component/save_label.dart';
@@ -17,7 +17,7 @@ class TravelListCover extends StatelessWidget {
     @required this.size,
   }) : super(key: key);
 
-  final List<DetailModel> detailModel;
+  final List<TravelModel> detailModel;
   final Size size;
 
   @override
