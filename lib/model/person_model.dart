@@ -8,7 +8,7 @@ class Person {
 
 const Person person = Person(
     name: 'Samantha',
-    family: 'potter',
+    family: 'bafet',
     profileImageUrl: 'assets/images/profile/samantha.png');
 
 

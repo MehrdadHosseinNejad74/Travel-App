@@ -1,12 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:travel_app/constant/constant.dart';
 import 'package:travel_app/model/travel_model.dart';
 
 import 'component/bottom_sheet.dart';
 import 'component/cover.dart';
 import 'component/description.dart';
+import 'component/facilities.dart';
+import 'component/facorite_icon.dart';
 import 'component/glance.dart';
+import 'component/reviews.dart';
+import 'component/shots.dart';
+import 'component/tips.dart';
 
 class DetailScreen extends StatefulWidget {
   final TravelModel travelModel;
@@ -18,6 +24,8 @@ class DetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<DetailScreen> {
+  int selectedTab = 1;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -41,41 +49,47 @@ class _DetailScreenState extends State<DetailScreen> {
                         topLeft: Radius.circular(10),
                         topRight: Radius.circular(10))),
                 child: SingleChildScrollView(
+                  padding: EdgeInsets.all(kDefaultPadding),
                   physics: BouncingScrollPhysics(),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Description(
                         travelModel: widget.travelModel,
                       ),
+                      SizedBox(
+                        height: kDefaultPadding,
+                      ),
                       Glance(
                         travelModel: widget.travelModel,
+                      ),
+                      SizedBox(
+                        height: kDefaultPadding,
+                      ),
+                      Tips(),
+                      SizedBox(
+                        height: kDefaultPadding,
+                      ),
+                      Facilities(
+                        travelModel: this.widget.travelModel,
+                      ),
+                      SizedBox(
+                        height: kDefaultPadding,
+                      ),
+                      Shots(),
+                      SizedBox(
+                        height: kDefaultPadding,
+                      ),
+                      Reviews(),
+                      SizedBox(
+                        height: kDefaultPadding * 4,
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            Positioned(
-              top: size.height * 0.304,
-              right: 15,
-              child: ClipOval(
-                child: Container(
-                    width: size.width * 0.13,
-                    height: size.width * 0.13,
-                    decoration: BoxDecoration(
-                        color: Color(0xffF5F5F5),
-                        boxShadow: [
-                          BoxShadow(
-                              offset: Offset(5, 5),
-                              color: Colors.black,
-                              blurRadius: 10),
-                        ]),
-                    child: Icon(
-                      Icons.favorite_border,
-                      color: kDefaultSecondaryColor,
-                    )),
-              ),
-            )
+            FavoriteIcon()
           ],
         ),
       ),

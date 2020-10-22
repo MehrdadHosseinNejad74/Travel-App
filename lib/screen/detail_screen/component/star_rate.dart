@@ -5,8 +5,9 @@ import 'package:flutter_svg/svg.dart';
 class Star extends StatelessWidget {
   final int like;
   final int dislike;
+  final bool left;
 
-  const Star({Key key, this.like, this.dislike}) : super(key: key);
+  const Star({Key key, this.like, this.dislike, this.left=true}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +35,7 @@ class Star extends StatelessWidget {
     }
 
     return Row(
+      mainAxisAlignment: left==true ? MainAxisAlignment.start : MainAxisAlignment.end ,
       children: stars,
     );
   }

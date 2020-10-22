@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:travel_app/constant/constant.dart';
 import 'package:travel_app/model/travel_model.dart';
+import 'package:travel_app/screen/detail_screen/component/title.dart';
 
 class Glance extends StatelessWidget {
   const Glance({
@@ -13,24 +14,17 @@ class Glance extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'At a glance',
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SectionTitle(value: 'At a glance',),
+        SizedBox(
+          height: kDefaultPadding / 2,
+        ),
+        Text(travelModel.glance,
             style: kDefaultTextStyle.copyWith(
-                fontSize: size.width * 0.04, fontWeight: FontWeight.w700),
-          ),
-          SizedBox(
-            height: kDefaultPadding / 2,
-          ),
-          Text(travelModel.glance,
-              style: kDefaultTextStyle.copyWith(
-                  height: 1.8, fontSize: size.width * 0.04))
-        ],
-      ),
+                height: 1.8, fontSize: size.width * 0.04))
+      ],
     );
   }
 }

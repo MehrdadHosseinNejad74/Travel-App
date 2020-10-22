@@ -36,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: kDefaultPadding,
           ),
           Tabs(
+            tabs: travelTabs,
             selectedTab: selectedTab,
             onClick: (tabIndex) {
               setState(() {

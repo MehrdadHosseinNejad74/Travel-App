@@ -5,8 +5,9 @@ import 'package:travel_app/constant/constant.dart';
 class Tabs extends StatefulWidget {
   final Function onClick;
   final int selectedTab;
+  final List<String> tabs;
 
-  const Tabs({Key key, @required this.onClick, @required this.selectedTab})
+  const Tabs({Key key, @required this.onClick, @required this.selectedTab, @required this.tabs})
       : super(key: key);
 
   @override
@@ -35,7 +36,7 @@ class _TabsState extends State<Tabs> {
                   margin: EdgeInsets.fromLTRB(
                       0, 0, kDefaultPadding, kDefaultPadding / 5),
                   child: Text(
-                    tabs[index],
+                    this.widget.tabs[index],
                     style: kDefaultTextStyle.copyWith(
                         color: kDefaultSecondaryColor,
                         fontSize: size.width * 0.040),
@@ -52,7 +53,7 @@ class _TabsState extends State<Tabs> {
             ],
           );
         },
-        itemCount: tabs.length,
+        itemCount: this.widget.tabs.length,
       ),
     );
   }

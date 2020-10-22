@@ -37,5 +37,7 @@ flutter:
     - assets/images/nearby/
     - assets/images/detailcover/
     - assets/images/icons/
+    - assets/images/tips/
+    - assets/images/travelershots/
 
 
