@@ -17,12 +17,12 @@ A beautiful travel app that consists of two screens (route).
      * Traveler's reviews
 
 ## App Design
-![App Design](https://github.com/MehrdadHosseinNejad74/Movie-App/blob/master/assets/images/concept/concept.png)
+![App Design](https://github.com/MehrdadHosseinNejad74/Travel-App/blob/master/assets/images/concept/concept.png)
 
 > The observed lag is due to the fps of the gif!
 
 
-![App Design_Gif](https://github.com/MehrdadHosseinNejad74/Movie-App/blob/master/assets/images/concept/concept.gif)
+![App Design_Gif](https://github.com/MehrdadHosseinNejad74/Travel-App/blob/master/assets/images/concept/concept.gif)
 
 
 ## Packages
