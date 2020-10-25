@@ -9,8 +9,8 @@ A beautiful travel app that consists of two screens (route).
     * ...
 
 * Detail Screen
-     * Cover: cover image
-     * Travel Destination Detial: distance, rate, country , description
+     * Cover Image
+     * Travel Destination Detial
      * Tips
      * Facilities: flights, car rental, hotel
      * Traveler's shots
