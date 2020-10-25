@@ -15,6 +15,8 @@ A beautiful travel app that consists of two screens (route).
      * Facilities: flights, car rental, hotel
      * Traveler's shots
      * Traveler's reviews
+     * Floating reservation button
+     
 
 ## App Design
 You can find travel app via link below.
