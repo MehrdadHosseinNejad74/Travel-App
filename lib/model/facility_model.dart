@@ -35,7 +35,7 @@ List<Facility> facilities = [
         Icons.hotel,
         color: Color(0xffBCBCBC),
       ),
-      description: 'Car rental',
+      description: 'Freehand Los Angeles',
       title: 'Hotel',
       price: 700),
 ];
