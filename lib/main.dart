@@ -17,10 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Travel App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        bottomSheetTheme: BottomSheetThemeData(
-            backgroundColor: Colors.transparent),
+        bottomSheetTheme:
+            BottomSheetThemeData(backgroundColor: Colors.transparent),
         scaffoldBackgroundColor: Color(0xffF5F5F5),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),
     );

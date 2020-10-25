@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/constant/constant.dart';
-import 'package:travel_app/model/travel_model.dart';
 import 'package:travel_app/screen/detail_screen/component/star_rate.dart';
 
 class Comment extends StatelessWidget {
@@ -16,9 +15,7 @@ class Comment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery
-        .of(context)
-        .size;
+    Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.only(bottom: kDefaultPadding),
       decoration: BoxDecoration(
@@ -27,15 +24,15 @@ class Comment extends StatelessWidget {
               : Color(0xff454545),
           borderRadius: left == true
               ? BorderRadius.only(
-              topRight: Radius.circular(15),
-              topLeft: Radius.circular(15),
-              bottomLeft: Radius.circular(0),
-              bottomRight: Radius.circular(15))
+                  topRight: Radius.circular(15),
+                  topLeft: Radius.circular(15),
+                  bottomLeft: Radius.circular(0),
+                  bottomRight: Radius.circular(15))
               : BorderRadius.only(
-              topRight: Radius.circular(15),
-              topLeft: Radius.circular(15),
-              bottomLeft: Radius.circular(15),
-              bottomRight: Radius.circular(0))),
+                  topRight: Radius.circular(15),
+                  topLeft: Radius.circular(15),
+                  bottomLeft: Radius.circular(15),
+                  bottomRight: Radius.circular(0))),
       padding: EdgeInsets.all(kDefaultPadding / 3),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,34 +40,31 @@ class Comment extends StatelessWidget {
         children: [
           name != null
               ? Align(
-            alignment: left == true
-                ? Alignment.centerLeft
-                : Alignment.centerRight,
-            child: Text(
-              name,
-              style: kDefaultTextStyle.copyWith(
-                  fontSize: size.width * 0.035,
-                  fontWeight: FontWeight.w700,
-                  color: left == true
-                      ? Colors.black
-                      : Colors.white.withOpacity(0.8)),
-            ),
-          )
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    name,
+                    style: kDefaultTextStyle.copyWith(
+                        fontSize: size.width * 0.035,
+                        fontWeight: FontWeight.w700,
+                        color: left == true
+                            ? Colors.black
+                            : Colors.white.withOpacity(0.8)),
+                  ),
+                )
               : SizedBox(
-            height: 0,
-          ),
+                  height: 0,
+                ),
           rate != null
               ? Star(
-            left: left,
-            like: rate,
-            dislike: 5 - rate,
-          )
+                  left: left,
+                  like: rate,
+                  dislike: 5 - rate,
+                )
               : SizedBox(
-            height: 0,
-          ),
+                  height: 0,
+                ),
           Align(
-            alignment:
-            left == true ? Alignment.centerLeft : Alignment.centerRight,
+            alignment: Alignment.centerLeft,
             child: Text(
               comment,
               style: kDefaultTextStyle.copyWith(

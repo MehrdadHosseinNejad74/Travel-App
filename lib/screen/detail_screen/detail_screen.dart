@@ -24,8 +24,6 @@ class DetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<DetailScreen> {
-  int selectedTab = 1;
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -67,9 +65,6 @@ class _DetailScreenState extends State<DetailScreen> {
                         height: kDefaultPadding,
                       ),
                       Tips(),
-                      SizedBox(
-                        height: kDefaultPadding,
-                      ),
                       Facilities(
                         travelModel: this.widget.travelModel,
                       ),

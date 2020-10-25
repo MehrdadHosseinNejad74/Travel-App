@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:travel_app/constant/constant.dart';
 
-class TravelListHeader extends StatelessWidget {
-  const TravelListHeader({
+class Header extends StatelessWidget {
+  const Header({
     Key key,
     @required this.header,
   }) : super(key: key);

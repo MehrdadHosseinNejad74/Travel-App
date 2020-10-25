@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_app/model/travel_model.dart';
-import 'package:travel_app/screen/home_screen/component/travel_list_cover.dart';
-import 'package:travel_app/screen/home_screen/component/travel_list_header.dart';
+import 'package:travel_app/screen/home_screen/component/travel_destination_content.dart';
+import 'package:travel_app/screen/home_screen/component/travel_destination_header.dart';
 
-class TravelList extends StatelessWidget {
+class TravelDestinationList extends StatelessWidget {
   final String header;
   final List<TravelModel> detailModel;
 
-  const TravelList({
+  const TravelDestinationList({
     Key key,
     @required this.header,
     @required this.detailModel,
@@ -24,8 +24,8 @@ class TravelList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          TravelListHeader(header: header),
-          TravelListCover(detailModel: detailModel)
+          Header(header: header),
+          Content(detailModel: detailModel)
         ],
       ),
     );

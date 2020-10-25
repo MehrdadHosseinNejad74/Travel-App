@@ -33,17 +33,16 @@ class ReviewBox extends StatelessWidget {
                 SizedBox(
                   width: kDefaultPadding / 3,
                 ),
-                Expanded(
-                  child: Comment(
-                    left: left,
-                    name: name,
-                    rate: rate,
-                    comment: comment,
-                  ),
+                Comment(
+                  left: left,
+                  name: name,
+                  rate: rate,
+                  comment: comment,
                 )
               ],
             )
           : Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Comment(

@@ -9,7 +9,7 @@ const Color kDefaultSecondaryColor = Color(0xff858585);
 const double kDefaultPadding = 20.0;
 
 //Tabs
-const List<String> travelTabs = ['EXPLORE', 'NEARBY', 'FAVORITES'];
+const List<String> kDefaultTravelTabs = ['EXPLORE', 'NEARBY', 'FAVORITES'];
 
 //Detail Tabs
 const List<String> detailTabs = ['TOURS', 'AVERAGE COSTS'];

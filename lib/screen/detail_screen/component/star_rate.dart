@@ -35,7 +35,7 @@ class Star extends StatelessWidget {
     }
 
     return Row(
-      mainAxisAlignment: left==true ? MainAxisAlignment.start : MainAxisAlignment.end ,
+      mainAxisAlignment:  MainAxisAlignment.start,
       children: stars,
     );
   }

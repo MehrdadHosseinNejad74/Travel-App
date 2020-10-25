@@ -1,26 +1,26 @@
 import 'package:flutter/cupertino.dart';
 import 'package:travel_app/model/travel_model.dart';
 
-import 'travel_list.dart';
+import 'travel_destination_list.dart';
 
 class Nearby extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TravelList(
+        TravelDestinationList(
           header: 'Tours',
           detailModel: tours,
         ),
-        TravelList(
+        TravelDestinationList(
           header: 'Nature',
           detailModel: nearbyNature,
         ),
-        TravelList(
+        TravelDestinationList(
           header: 'Landmarks',
           detailModel: nearbyLandmarks,
         ),
-        TravelList(
+        TravelDestinationList(
           header: 'Local food',
           detailModel: localFood,
         )

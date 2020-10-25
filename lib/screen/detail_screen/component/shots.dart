@@ -39,64 +39,64 @@ class Shots extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        height: size.width * 0.28,
-                        width: size.width * 0.28,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage(
-                                    "assets/images/travelershots/san.png")),
-                            borderRadius: BorderRadius.circular(10)),
-                      ),
-                      Container(
-                        height: size.width * 0.28,
-                        width: size.width * 0.28,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage(
-                                    "assets/images/travelershots/sun.png")),
-                            borderRadius: BorderRadius.circular(10)),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: kDefaultPadding / 2,
-                  ),
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      Container(
-                        height: size.height * 0.14,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage(
-                                    "assets/images/travelershots/hori.png")),
-                            borderRadius: BorderRadius.circular(10)),
-                      ),
-                      Positioned.fill(
-                        child: DarkGradient(
-                          radius: 10,
+              child: Container(
+                height: size.height * 0.3,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: size.width * 0.28,
+                          width: size.width * 0.28,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(
+                                      "assets/images/travelershots/san.png")),
+                              borderRadius: BorderRadius.circular(10)),
                         ),
-                      ),
-                      Center(
-                          child: Text(
-                        "+ 16 more",
-                        style: kDefaultTextStyle.copyWith(
-                            color: Colors.white,
-                            fontSize: size.width * 0.060),
-                      ))
-                    ],
-                  ),
-                ],
+                        Container(
+                          height: size.width * 0.28,
+                          width: size.width * 0.28,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(
+                                      "assets/images/travelershots/sun.png")),
+                              borderRadius: BorderRadius.circular(10)),
+                        ),
+                      ],
+                    ),
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Container(
+                          height: size.height * 0.14,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(
+                                      "assets/images/travelershots/hori.png")),
+                              borderRadius: BorderRadius.circular(10)),
+                        ),
+                        Positioned.fill(
+                          child: DarkGradient(
+                            radius: 10,
+                          ),
+                        ),
+                        Center(
+                            child: Text(
+                          "+ 16 more",
+                          style: kDefaultTextStyle.copyWith(
+                              color: Colors.white,
+                              fontSize: size.width * 0.060),
+                        ))
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

@@ -10,15 +10,13 @@ import 'cover_image.dart';
 import 'dark_gradient.dart';
 import 'description.dart';
 
-class TravelListCover extends StatelessWidget {
-  const TravelListCover({
+class Content extends StatelessWidget {
+  const Content({
     Key key,
     @required this.detailModel,
-    @required this.size,
   }) : super(key: key);
 
   final List<TravelModel> detailModel;
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
