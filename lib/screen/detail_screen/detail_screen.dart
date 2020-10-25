@@ -8,7 +8,7 @@ import 'component/bottom_sheet.dart';
 import 'component/cover.dart';
 import 'component/description.dart';
 import 'component/facilities.dart';
-import 'component/facorite_icon.dart';
+import 'component/favorite_icon.dart';
 import 'component/glance.dart';
 import 'component/reviews.dart';
 import 'component/shots.dart';
