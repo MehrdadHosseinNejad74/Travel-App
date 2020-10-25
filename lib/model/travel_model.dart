@@ -41,6 +41,7 @@ const List<TravelModel> specialOffers = [
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
       description: 'Big Sur Coast',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       destination: 875,
       save: 10,
       price: 2400)
@@ -51,6 +52,7 @@ const List<TravelModel> upcomingTours = [
       rate: 3,
       imageUrl: 'assets/images/upcoming/maldives.png',
       description: 'Maldives Summer',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       destination: 875,
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -59,6 +61,8 @@ const List<TravelModel> upcomingTours = [
   TravelModel(
       rate: 3,
       imageUrl: 'assets/images/upcoming/venice.png',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
+
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
       description: 'Venice & Around',
@@ -72,6 +76,7 @@ const List<TravelModel> nature = [
       rate: 3,
       imageUrl: 'assets/images/nature/niagara.png',
       description: 'Niagara Falls',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
       destination: 875,
@@ -79,6 +84,7 @@ const List<TravelModel> nature = [
   TravelModel(
       rate: 3,
       imageUrl: 'assets/images/nature/nationalpark.png',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       description: 'Niagara Falls',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -91,6 +97,7 @@ const List<TravelModel> landmarks = [
       rate: 3,
       imageUrl: 'assets/images/landmark/eiffel.png',
       description: 'The Eiffel Tower',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
       destination: 875,
@@ -99,6 +106,7 @@ const List<TravelModel> landmarks = [
       rate: 3,
       imageUrl: 'assets/images/landmark/liberty.png',
       description: 'The Statue of Liberty',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
       destination: 875,
@@ -111,6 +119,7 @@ const List<TravelModel> tours = [
       rate: 3,
       imageUrl: 'assets/images/nearby/tours.png',
       description: 'Get to Know BC',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       destination: 875,
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -123,6 +132,7 @@ const List<TravelModel> nearbyNature = [
       rate: 3,
       imageUrl: 'assets/images/nearby/backcountry.png',
       description: 'Backcountry',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       country: 'United States',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -130,6 +140,7 @@ const List<TravelModel> nearbyNature = [
   TravelModel(
       rate: 3,
       imageUrl: 'assets/images/nearby/fjord.png',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       description: 'Fjord',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -143,6 +154,7 @@ const List<TravelModel> nearbyLandmarks = [
       imageUrl: 'assets/images/nearby/christ.png',
       description: 'Christ Church Cathedral',
       country: 'United States',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
       destination: 5),
@@ -150,6 +162,7 @@ const List<TravelModel> nearbyLandmarks = [
       rate: 3,
       imageUrl: 'assets/images/nearby/thunderbird.png',
       description: 'Thunderbird Park',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       country: 'United States',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -161,6 +174,7 @@ const List<TravelModel> localFood = [
       rate: 3,
       imageUrl: 'assets/images/nearby/bar.png',
       description: 'Hy’s Steakhouse & Cocktail Bar',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       country: 'United States',
       glance:
       "See The Best Of SoCal And Book Your Los Angeles Tours With Surf City Tours Today! Free Pickup & Drop-Offs. Satisfaction Guaranteed. Destinations: Hollywood Sign, Movie Studios, Filming Locations, Celebrity Homes, Crime Scenes, Beverly Hills, Malibu, Sunset Strip.",
@@ -168,6 +182,7 @@ const List<TravelModel> localFood = [
   TravelModel(
       rate: 3,
       imageUrl: 'assets/images/nearby/chambar.png',
+      detailImageUrl: 'assets/images/detailcover/losangeles.png',
       description: 'Chambar',
       country: 'United States',
       glance:
