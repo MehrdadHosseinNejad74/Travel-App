@@ -30,6 +30,8 @@ You can find travel app via link below.
 
 ![App Design_Gif](https://github.com/MehrdadHosseinNejad74/Travel-App/blob/master/assets/images/concept/concept.gif)
 
+## Download App
+[![Download App](https://github.com/MehrdadHosseinNejad74/Travel-App/blob/master/assets/images/concept/download.png)](https://github.com/MehrdadHosseinNejad74/Travel-App/blob/master/apk/app-release.apk)
 
 ## Packages
  *  [google_fonts: ^1.1.0](https://pub.dev/packages/google_fonts/install)
